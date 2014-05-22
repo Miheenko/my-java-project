@@ -6,7 +6,9 @@
 <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
 <listEntry value="com.example.tests.TestBase"/>
 <listEntry value="com.example.tests.AlsoMyCreateGroupTests"/>
+<listEntry value="com.example.tests.AddressData"/>
 <listEntry value="com.example.tests.GroupData"/>
+<listEntry value="com.example.tests.MyAddAddressTests"/>
 <listEntry value="com.example.tests.MyCreateGroupTests"/>
 </listAttribute>
 <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>

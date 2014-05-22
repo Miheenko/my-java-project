@@ -1,7 +1,6 @@
 
 package com.example.tests;
 
-
 import org.testng.annotations.Test;
 
 public class MyCreateGroupTests extends TestBase {

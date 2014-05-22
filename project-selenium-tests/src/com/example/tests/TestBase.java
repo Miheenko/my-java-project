@@ -1,25 +1,24 @@
 package com.example.tests;
 
-import static org.junit.Assert.fail;
-
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.Assert;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
 public class TestBase {
 
-	private static WebDriver driver;
+	private static  WebDriver driver;
 	private static String baseUrl;
-	private static boolean acceptNextAlert = true;
+	private  static boolean acceptNextAlert = true;
 	private static StringBuffer verificationErrors = new StringBuffer();
 
 	@BeforeTest
@@ -63,16 +62,7 @@ public class TestBase {
 	    driver.quit();
 	    String verificationErrorString = verificationErrors.toString();
 	    if (!"".equals(verificationErrorString)) {
-	      fail(verificationErrorString);
-	    }
-	  }
-
-	private boolean isElementPresent(By by) {
-	    try {
-	      driver.findElement(by);
-	      return true;
-	    } catch (NoSuchElementException e) {
-	      return false;
+	      Assert.fail(verificationErrorString);
 	    }
 	  }
 
@@ -99,5 +89,44 @@ public class TestBase {
 	      acceptNextAlert = true;
 	    }
 	  }
+
+	protected void returnToHomePage() {
+		driver.findElement(By.linkText("home page")).click();
+	}
+
+	protected void submitAddressCreation() {
+		driver.findElement(By.name("submit")).click();
+	}
+
+	protected void fillAddressForm(AddressData address) {
+		driver.findElement(By.name("firstname")).clear();
+	    driver.findElement(By.name("firstname")).sendKeys(address.firstName);
+	    driver.findElement(By.name("lastname")).clear();
+	    driver.findElement(By.name("lastname")).sendKeys(address.lastName);
+	    driver.findElement(By.name("address")).clear();
+	    driver.findElement(By.name("address")).sendKeys(address.addressFirst);
+	    driver.findElement(By.name("home")).clear();
+	    driver.findElement(By.name("home")).sendKeys(address.phoneHome);
+	    driver.findElement(By.name("mobile")).clear();
+	    driver.findElement(By.name("mobile")).sendKeys(address.phoneMobile);
+	    driver.findElement(By.name("work")).clear();
+	    driver.findElement(By.name("work")).sendKeys(address.phoneWork);
+	    driver.findElement(By.name("email")).clear();
+	    driver.findElement(By.name("email")).sendKeys(address.email);
+	    new Select(driver.findElement(By.name("bday"))).selectByVisibleText(address.birthDay);
+	    new Select(driver.findElement(By.name("bmonth"))).selectByVisibleText(address.birthMonth);
+	    driver.findElement(By.name("byear")).clear();
+	    driver.findElement(By.name("byear")).sendKeys(address.birthYear);
+	    new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(address.newGroup);
+	    driver.findElement(By.name("address2")).clear();
+	    driver.findElement(By.name("address2")).sendKeys(address.addressSecond);
+	    driver.findElement(By.name("phone2")).clear();
+	    driver.findElement(By.name("phone2")).sendKeys(address.phoneHomeSecond);
+	}
+
+	protected void initNewAddressCreation() {
+		driver.findElement(By.linkText("add new")).click();
+	}
+	
 
 }
