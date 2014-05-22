@@ -13350,3 +13350,83 @@ java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 55697 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1244889460\testng-customsuite.xml
 java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 55697 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1244889460\testng-customsuite.xml
+!SESSION 2014-05-22 17:27:57.502 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.8.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.testng.eclipse 1 0 2014-05-22 17:28:44.101
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in project-selenium-tests]]
+  AlsoMyCreateGroupTests.java (not open)
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.testng.annotations.AfterMethod
+    import org.testng.annotations.BeforeMethod
+    import org.testng.Assert
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeTest
+    class TestBase
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void setUp()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      void tearDown()
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+      void returnToHomePage()
+      void submitAddressCreation()
+      void fillAddressForm(AddressData)
+      void initNewAddressCreation()
+  MyAddAddressTests.java (not open)
+  GroupData.java
+    package com.example.tests
+    class GroupData
+      String groupname
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  AddressData.java
+    package com.example.tests
+    class AddressData
+      String firstName
+      String lastName
+      String addressFirst
+      String phoneHome
+      String phoneMobile
+      String phoneWork
+      String email
+      String birthDay
+      String birthMonth
+      String birthYear
+      String newGroup
+      String addressSecond
+      String phoneHomeSecond
+      AddressData(String, String, String, String, String, String, String, String, String, String, String, String, String)
+      AddressData()
+  MyCreateGroupTests.java (not open)
+
+!ENTRY org.testng.eclipse 1 0 2014-05-22 17:28:44.391
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57577 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--1644228673\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 57577 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--1644228673\testng-customsuite.xml
