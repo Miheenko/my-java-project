@@ -6,8 +6,8 @@ public class MyAddAddressTests extends TestBase {
   
   @Test
   public void testAddressCreation() throws Exception {
-	openMainPage();
-    initNewAddressCreation();
+	app.getNavigationHelper().openMainPage();
+    app.getContactHelper().initNewAddressCreation();
     AddressData address = new AddressData();
     address.firstName = "first_Name";
     address.lastName = "last_Name";
@@ -22,8 +22,8 @@ public class MyAddAddressTests extends TestBase {
     address.newGroup = "555";
     address.addressSecond = "Second_address";
     address.phoneHomeSecond = "";
-	fillAddressForm(address);
-    submitAddressCreation();
-    returnToHomePage();
+	app.getContactHelper().fillAddressForm(address);
+    app.getContactHelper().submitAddressCreation();
+    app.getContactHelper().returnToHomePage();
   }
 }
