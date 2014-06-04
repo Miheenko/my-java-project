@@ -3,7 +3,7 @@ package com.example.tests;
 import org.testng.annotations.Test;
 
 public class MyAddAddressTests extends TestBase {
-  
+
   @Test
   public void testAddressCreation() throws Exception {
 	app.getNavigationHelper().openMainPage();

@@ -9,8 +9,6 @@ public class TestBase {
 	
 	protected static ApplicationManager app;
 
-	
-
 	@BeforeTest
 	public void setUp() throws Exception {
 		app = new ApplicationManager();
@@ -20,8 +18,5 @@ public class TestBase {
 	@AfterTest
 	public void tearDown() throws Exception {
 		app.stop();
-	   
 	  }
-	
-
 }

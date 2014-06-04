@@ -6,8 +6,6 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-
-
 public class ApplicationManager {
 		
 	public  WebDriver driver;
@@ -22,21 +20,12 @@ public class ApplicationManager {
 		 driver = new FirefoxDriver();
 		 baseUrl = "http://localhost/";
 		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		 
-		 //navigationHelper = new NavigationHelper(this);
-		 //groupHelper = new GroupHelper(this);
-		 //contactHelper = new ContactHelper(this);
 	}
 
 	
-
-	
-
 	public void stop() {
 		 driver.quit();
-		   
-		
-	}
+		   }
 
 	public NavigationHelper getNavigationHelper(){
 		if (navigationHelper == null) {

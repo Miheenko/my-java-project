@@ -9,8 +9,8 @@ public class EditAddressTests extends TestBase {
 		app.getNavigationHelper().openMainPage();
 		app.getContactHelper().initRemoveEditContact(1);
 		AddressData address = new AddressData();
-		 address.email = "test@yandex.com";
-		 address.addressFirst = "first_edit_address";
+		address.email = "test@yandex.com";
+		address.addressFirst = "first_edit_address";
 		app.getContactHelper().fillAddressForm(address);
 		app.getContactHelper().submitAddressModification();
 		app.getContactHelper().returnToHomePage();

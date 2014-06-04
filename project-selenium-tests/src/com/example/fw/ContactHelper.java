@@ -9,16 +9,13 @@ public class ContactHelper extends HelperBase {
 
 	public ContactHelper(ApplicationManager manager) {
 		super(manager);
-	
 	}
 
 	public void initNewAddressCreation() {
 		click(By.linkText("add new"));
 	}
 
-	public void fillAddressForm(AddressData address) 
-	{
-		
+	public void fillAddressForm(AddressData address) {
 	    type(By.name("firstname"),address.firstName);
 	    type(By.name("lastname"), address.lastName);
 	    type(By.name("address"), address.addressFirst);
@@ -34,8 +31,6 @@ public class ContactHelper extends HelperBase {
 	    type(By.name("phone2"), address.phoneHomeSecond);
 	}
 
-	
-
 	public void submitAddressCreation() {
 		click(By.name("submit"));
 	}
@@ -44,4 +39,20 @@ public class ContactHelper extends HelperBase {
 		click(By.linkText("home page"));
 	}
 
+	private void selectContactByIndex(int index) {
+		click(By.xpath("(//input[@name='selected[]'])[" + index +"]"));
+	}
+
+	public void initRemoveEditContact(int index) {
+		selectContactByIndex(index);
+		click(By.xpath("(//a[contains(@href,'edit.php?id=')])[" + index + "]"));
+	}
+
+	public void removeContact() {
+	   click(By.xpath("//input[@name='update' and @value='Delete']"));	
+	}
+
+	public void submitAddressModification() {
+		click(By.xpath("//input[@name='update' and @value='Update']"));
+	}
 }

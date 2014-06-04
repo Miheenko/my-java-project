@@ -15,5 +15,4 @@ public class EditGroupTests extends TestBase {
 	    app.getGroupHelper().submitGroupModification();
 	    app.getGroupHelper().returnToGroupsPage();
 	}
-
 }

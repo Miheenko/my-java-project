@@ -9,9 +9,6 @@ public class RemoveAddressTests extends TestBase {
 		app.getNavigationHelper().openMainPage();
 		app.getContactHelper().initRemoveEditContact(3);
 		app.getContactHelper().removeContact();
-		app.getContactHelper().returnToHomePage();
-	  
-	    
+		app.getContactHelper().returnToHomePage();    
 	}
-
 }
