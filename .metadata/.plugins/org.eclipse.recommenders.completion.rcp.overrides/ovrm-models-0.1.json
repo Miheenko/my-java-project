@@ -1,1 +1,7 @@
-{}
+{
+  "C:\\projects\\java_project\\my-java-project\\project-selenium-tests\\src": {
+    "location": "C:\\projects\\java_project\\my-java-project\\project-selenium-tests\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\projects\\java_project\\my-java-project\\project-selenium-tests\\src\u0027. Skipped."
+  }
+}

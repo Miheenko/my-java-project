@@ -1,45 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26007" started-at="2014-05-22T13:28:45Z" finished-at="2014-05-22T13:29:11Z">
+  <suite name="Default suite" duration-ms="10228" started-at="2014-06-17T04:59:23Z" finished-at="2014-06-17T04:59:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26007" started-at="2014-05-22T13:28:45Z" finished-at="2014-05-22T13:29:11Z">
-      <class name="com.example.tests.MyCreateGroupTests">
-        <test-method status="PASS" signature="testEmptyGroupCreation()[pri:0, instance:com.example.tests.MyCreateGroupTests@378d0a23]" name="testEmptyGroupCreation" duration-ms="2468" started-at="2014-05-22T17:29:05Z" finished-at="2014-05-22T17:29:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEmptyGroupCreation -->
-        <test-method status="PASS" signature="testNonEmptyGroupCreation()[pri:0, instance:com.example.tests.MyCreateGroupTests@378d0a23]" name="testNonEmptyGroupCreation" duration-ms="3033" started-at="2014-05-22T17:29:07Z" finished-at="2014-05-22T17:29:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNonEmptyGroupCreation -->
-      </class> <!-- com.example.tests.MyCreateGroupTests -->
-      <class name="com.example.tests.AlsoMyCreateGroupTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.AlsoMyCreateGroupTests@751b1e07]" name="setUp" is-config="true" duration-ms="7964" started-at="2014-05-22T17:28:45Z" finished-at="2014-05-22T17:28:53Z">
+    <test name="Default test" duration-ms="10228" started-at="2014-06-17T04:59:23Z" finished-at="2014-06-17T04:59:33Z">
+      <class name="com.example.tests.EditAddressTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.EditAddressTests@7d1f0c98]" name="setUp" is-config="true" duration-ms="7527" started-at="2014-06-17T08:59:23Z" finished-at="2014-06-17T08:59:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testEmptyGroupCreation()[pri:0, instance:com.example.tests.AlsoMyCreateGroupTests@751b1e07]" name="testEmptyGroupCreation" duration-ms="4056" started-at="2014-05-22T17:28:53Z" finished-at="2014-05-22T17:28:57Z">
+        <test-method status="PASS" signature="editSomeAddress()[pri:0, instance:com.example.tests.EditAddressTests@7d1f0c98]" name="editSomeAddress" duration-ms="1989" started-at="2014-06-17T08:59:30Z" finished-at="2014-06-17T08:59:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEmptyGroupCreation -->
-        <test-method status="PASS" signature="testNonEmptyGroupCreation()[pri:0, instance:com.example.tests.AlsoMyCreateGroupTests@751b1e07]" name="testNonEmptyGroupCreation" duration-ms="4294" started-at="2014-05-22T17:28:57Z" finished-at="2014-05-22T17:29:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNonEmptyGroupCreation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.AlsoMyCreateGroupTests@751b1e07]" name="tearDown" is-config="true" duration-ms="518" started-at="2014-05-22T17:29:10Z" finished-at="2014-05-22T17:29:11Z">
+        </test-method> <!-- editSomeAddress -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.EditAddressTests@7d1f0c98]" name="tearDown" is-config="true" duration-ms="700" started-at="2014-06-17T08:59:32Z" finished-at="2014-06-17T08:59:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.example.tests.AlsoMyCreateGroupTests -->
-      <class name="com.example.tests.MyAddAddressTests">
-        <test-method status="PASS" signature="testAddressCreation()[pri:0, instance:com.example.tests.MyAddAddressTests@c949c53]" name="testAddressCreation" duration-ms="3647" started-at="2014-05-22T17:29:01Z" finished-at="2014-05-22T17:29:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddressCreation -->
-      </class> <!-- com.example.tests.MyAddAddressTests -->
+      </class> <!-- com.example.tests.EditAddressTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
