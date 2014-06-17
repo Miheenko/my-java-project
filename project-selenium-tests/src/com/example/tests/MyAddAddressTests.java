@@ -1,5 +1,9 @@
 package com.example.tests;
 
+import java.util.Collections;
+import java.util.List;
+import static org.testng.Assert.assertEquals;
+
 import org.testng.annotations.Test;
 
 public class MyAddAddressTests extends TestBase {
@@ -7,6 +11,11 @@ public class MyAddAddressTests extends TestBase {
   @Test
   public void testAddressCreation() throws Exception {
 	app.getNavigationHelper().openMainPage();
+	
+	//save old state
+		List<AddressData> oldList = app.getContactHelper().getContacts();
+		
+		//actions
     app.getContactHelper().initNewAddressCreation();
     AddressData address = new AddressData();
     address.firstName = "first_Name";
@@ -25,5 +34,17 @@ public class MyAddAddressTests extends TestBase {
 	app.getContactHelper().fillAddressForm(address);
     app.getContactHelper().submitAddressCreation();
     app.getContactHelper().returnToHomePage();
+    
+    
+    //save new state
+    List<AddressData> newList = app.getContactHelper().getContacts();
+
+    
+    //compare states
+    assertEquals(newList.size(), oldList.size() + 1);
+    
+    oldList.add(address);
+    Collections.sort(oldList);
+    assertEquals(newList, oldList);
   }
 }
