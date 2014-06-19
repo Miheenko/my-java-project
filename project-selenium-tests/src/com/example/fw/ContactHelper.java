@@ -28,7 +28,7 @@ public class ContactHelper extends HelperBase {
 	    selectByText(By.name("bday"), address.birthDay);
 	    selectByText(By.name("bmonth"), address.birthMonth);
 	    type(By.name("byear"), address.birthYear);
-	   // selectByText(By.name("new_group"), address.newGroup);
+	    selectByText(By.name("new_group"), address.newGroup);
 	    type(By.name("address2"), address.addressSecond);
 	    type(By.name("phone2"), address.phoneHomeSecond);
 	}

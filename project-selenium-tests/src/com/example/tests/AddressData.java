@@ -37,12 +37,6 @@ public class AddressData implements Comparable<AddressData> {
 	public AddressData() {
 		
 	}
-	
-
-	@Override
-	public String toString() {
-		return "AddressData [firstName=" + firstName + "]";
-	}
 
 	@Override
 	public int hashCode() {
@@ -50,6 +44,17 @@ public class AddressData implements Comparable<AddressData> {
 		int result = 1;
 		//result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
 		return result;
+	}
+
+	@Override
+	public String toString() {
+		return "AddressData [firstName=" + firstName + ", lastName=" + lastName
+				+ ", addressFirst=" + addressFirst + ", phoneHome=" + phoneHome
+				+ ", phoneMobile=" + phoneMobile + ", phoneWork=" + phoneWork
+				+ ", email=" + email + ", birthDay=" + birthDay
+				+ ", birthMonth=" + birthMonth + ", birthYear=" + birthYear
+				+ ", newGroup=" + newGroup + ", addressSecond=" + addressSecond
+				+ ", phoneHomeSecond=" + phoneHomeSecond + "]";
 	}
 
 	@Override
@@ -71,7 +76,6 @@ public class AddressData implements Comparable<AddressData> {
 
 	@Override
 	public int compareTo(AddressData other) {
-		
 		return this.firstName.toLowerCase().compareTo(other.firstName.toLowerCase());
 	}
 }

@@ -31,6 +31,7 @@ public class EditAddressTests extends TestBase {
 		  oldList.remove(0);
 		  oldList.add(address);
 		  Collections.sort(oldList);
+		  Collections.sort(newList);
 		  assertEquals(newList, oldList);
 	  
 	}

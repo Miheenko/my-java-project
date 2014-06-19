@@ -1584,3 +1584,592 @@ java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 53731 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-936844282\testng-customsuite.xml
 java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 53731 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-936844282\testng-customsuite.xml
+!SESSION 2014-06-17 22:13:17.019 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.8.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.testng.eclipse 1 0 2014-06-17 22:56:04.871
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyCreateGroupTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.ArrayList
+  import java.util.Collections
+  import java.util.Iterator
+  import java.util.List
+  import java.util.Random
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.DataProvider
+  import org.testng.annotations.Test
+  class MyCreateGroupTests
+    Iterator<Object[]> randomValidGroupGenerator()
+    String generateRandomString()
+    void testGroupCreationWithValidData(GroupData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-17 22:56:06.143
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53069 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--1550958698\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 53069 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--1550958698\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-17 22:56:44.715
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyCreateGroupTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.ArrayList
+  import java.util.Collections
+  import java.util.Iterator
+  import java.util.List
+  import java.util.Random
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.DataProvider
+  import org.testng.annotations.Test
+  class MyCreateGroupTests
+    Iterator<Object[]> randomValidGroupGenerator()
+    String generateRandomString()
+    void testGroupCreationWithValidData(GroupData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-17 22:56:44.736
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53097 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1741762904\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 53097 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1741762904\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-17 23:05:06.993
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] RemoveGroupTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import java.util.Random
+  import org.testng.annotations.Test
+  class RemoveGroupTests
+    void deleteSomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-06-17 23:05:07.025
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53372 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--5628683\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 53372 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--5628683\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-17 23:07:19.163
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] EditGroupTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import java.util.Random
+  import org.testng.annotations.Test
+  class EditGroupTests
+    void editSomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-06-17 23:07:19.180
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53426 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--1289384165\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 53426 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--1289384165\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-17 23:14:23.927
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] EditGroupTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import java.util.Random
+  import org.testng.annotations.Test
+  class EditGroupTests
+    void editSomeGroup(GroupData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-17 23:14:23.944
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53620 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--18758883\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 53620 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--18758883\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-17 23:16:11.355
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] EditGroupTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import java.util.Random
+  import org.testng.annotations.Test
+  class EditGroupTests
+    void editSomeGroup(GroupData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-17 23:16:11.372
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53632 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--325618295\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 53632 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--325618295\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-17 23:20:44.538
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] EditGroupTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import java.util.Random
+  import org.testng.annotations.Test
+  class EditGroupTests
+    void editSomeGroup(GroupData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-17 23:20:44.557
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53900 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-699720555\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 53900 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-699720555\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 10:50:40.257
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 10:50:40.271
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55683 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-15127656\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 55683 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-15127656\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 11:13:07.026
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:MyCreateGroupTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyCreateGroupTests
+    void testGroupCreationWithValidData(GroupData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 11:13:07.047
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56227 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1666231850\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 56227 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1666231850\testng-customsuite.xml
+!SESSION 2014-06-18 20:35:23.114 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.8.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 20:37:20.572
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 20:37:22.055
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59772 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--32694826\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 59772 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--32694826\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:08:08.495
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:08:08.554
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60367 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--450696885\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 60367 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--450696885\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:09:53.795
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:09:53.899
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60382 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-903539334\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 60382 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-903539334\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:10:38.271
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:10:38.327
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60395 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1763715281\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 60395 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1763715281\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:12:45.240
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:12:45.260
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60945 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--916244698\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 60945 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--916244698\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:13:55.256
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:13:55.273
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61547 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1579864959\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 61547 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1579864959\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:21:20.217
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:21:20.235
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61824 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--1583848626\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 61824 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--1583848626\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:23:23.941
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:23:23.965
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62163 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1408577475\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 62163 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1408577475\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:25:42.928
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:25:42.990
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62431 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1716977527\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 62431 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1716977527\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:26:19.026
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:26:19.084
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62696 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--623804133\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 62696 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--623804133\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:35:05.207
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:35:05.268
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63035 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-280691270\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 63035 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-280691270\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:38:20.111
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:38:20.127
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63273 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--1946175712\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 63273 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--1946175712\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:40:48.729
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:40:48.749
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63555 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1620657318\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 63555 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1620657318\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:43:12.795
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:43:12.814
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63848 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--1968064239\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 63848 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--1968064239\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:46:15.418
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] MyAddAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import java.util.Collections
+  import java.util.List
+  import org.testng.Assert.assertEquals
+  import org.testng.annotations.Test
+  class MyAddAddressTests
+    void testAddressCreation(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-18 21:46:15.441
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64150 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--914577423\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 64150 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--914577423\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-19 09:31:48.881
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] EditAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class EditAddressTests
+    void editSomeAddress()
+
+!ENTRY org.testng.eclipse 1 0 2014-06-19 09:31:49.271
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65233 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--1549417886\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 65233 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--1549417886\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-19 09:33:32.690
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] EditAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class EditAddressTests
+    void editSomeAddress()
+
+!ENTRY org.testng.eclipse 1 0 2014-06-19 09:33:32.715
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65276 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--666080384\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 65276 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--666080384\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-19 09:34:00.781
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] EditAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class EditAddressTests
+    void editSomeAddress()
+
+!ENTRY org.testng.eclipse 1 0 2014-06-19 09:34:00.800
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65287 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1361808475\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 65287 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1361808475\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-19 09:35:25.569
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] EditAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class EditAddressTests
+    void editSomeAddress()
+
+!ENTRY org.testng.eclipse 1 0 2014-06-19 09:35:25.586
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65455 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--435045509\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 65455 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse--435045509\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-19 09:36:11.370
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] EditAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class EditAddressTests
+    void editSomeAddress()
+
+!ENTRY org.testng.eclipse 1 0 2014-06-19 09:36:11.411
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49217 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1248646850\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 49217 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1248646850\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-19 09:39:01.300
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] EditAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class EditAddressTests
+    void editSomeAddress(AddressData)
+
+!ENTRY org.testng.eclipse 1 0 2014-06-19 09:39:01.321
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49300 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-688714606\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 49300 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-688714606\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-06-19 09:42:29.039
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] EditAddressTests.java [in com.example.tests [in src [in project-selenium-tests]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class EditAddressTests
+    void editSomeAddress()
+
+!ENTRY org.testng.eclipse 1 0 2014-06-19 09:42:29.056
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar C:\projects\java_project\my-java-project\project-selenium-tests\bin C:\Program Files\jar\selenium-server-standalone-2.41.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49512 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1066228254\testng-customsuite.xml
+java -ea -classpath /C:/Program Files/eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:C:\projects\java_project\my-java-project\project-selenium-tests\bin:C:\Program Files\jar\selenium-server-standalone-2.41.0.jar org.testng.remote.RemoteTestNG -serport 49512 -d C:\projects\java_project\my-java-project\project-selenium-tests\test-output C:\Users\karolina\AppData\Local\Temp\testng-eclipse-1066228254\testng-customsuite.xml

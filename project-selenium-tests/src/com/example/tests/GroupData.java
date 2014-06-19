@@ -15,9 +15,12 @@ public class GroupData  implements Comparable<GroupData> {
 		this.footer = footer;
 	}
 
+	
+
 	@Override
 	public String toString() {
-		return "GroupData [groupname=" + groupname + "]";
+		return "GroupData [groupname=" + groupname + ", header=" + header
+				+ ", footer=" + footer + "]";
 	}
 
 	@Override
