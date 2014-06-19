@@ -16,7 +16,7 @@ public class MyAddAddressTests extends TestBase {
 	//save old state
 		List<AddressData> oldList = app.getContactHelper().getContacts();
 		
-		//actions
+	//actions
     app.getContactHelper().initNewAddressCreation();
    	app.getContactHelper().fillAddressForm(address);
     app.getContactHelper().submitAddressCreation();
@@ -25,8 +25,6 @@ public class MyAddAddressTests extends TestBase {
     
     //save new state
     List<AddressData> newList = app.getContactHelper().getContacts();
-
-    
        
     oldList.add(address);
     Collections.sort(oldList);

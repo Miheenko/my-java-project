@@ -29,12 +29,10 @@ public class MyCreateGroupTests extends TestBase {
     app.getGroupHelper().returnToGroupsPage();
     
     //save new state
-    List<GroupData> newList = app.getGroupHelper().getGroups();
-        
+    List<GroupData> newList = app.getGroupHelper().getGroups();   
     oldList.add(group);
     Collections.sort(oldList);
     assertEquals(newList, oldList);
   }
   
-
 }

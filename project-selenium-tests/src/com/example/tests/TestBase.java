@@ -88,5 +88,4 @@ public class TestBase {
 		System.out.println("res: " + res);
 		return res;
 	}
-	
 }

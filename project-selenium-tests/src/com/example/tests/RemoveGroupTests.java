@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 
 public class RemoveGroupTests extends TestBase{
 	
-	
 	@Test 
 	public void deleteSomeGroup(){
 		app.getNavigationHelper().openMainPage();

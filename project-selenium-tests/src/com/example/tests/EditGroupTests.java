@@ -29,7 +29,6 @@ public class EditGroupTests extends TestBase {
 	    
 	    //save new state
 	    List<GroupData> newList = app.getGroupHelper().getGroups();
-	    
 	    oldList.remove(index);
 	    oldList.add(group);
 	    Collections.sort(oldList);

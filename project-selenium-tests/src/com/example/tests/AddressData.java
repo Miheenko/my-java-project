@@ -38,6 +38,7 @@ public class AddressData implements Comparable<AddressData> {
 		
 	}
 
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
