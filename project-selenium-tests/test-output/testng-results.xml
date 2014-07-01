@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11332" started-at="2014-06-19T05:42:29Z" finished-at="2014-06-19T05:42:41Z">
+  <suite name="Default suite" duration-ms="9384" started-at="2014-07-01T13:03:38Z" finished-at="2014-07-01T13:03:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11332" started-at="2014-06-19T05:42:29Z" finished-at="2014-06-19T05:42:41Z">
-      <class name="com.example.tests.EditAddressTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.EditAddressTests@76724357]" name="setUp" is-config="true" duration-ms="8571" started-at="2014-06-19T09:42:29Z" finished-at="2014-06-19T09:42:38Z">
+    <test name="Default test" duration-ms="9384" started-at="2014-07-01T13:03:38Z" finished-at="2014-07-01T13:03:48Z">
+      <class name="com.example.tests.RemoveAddressTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.RemoveAddressTests@3abdf256]" name="setUp" is-config="true" duration-ms="7860" started-at="2014-07-01T17:03:38Z" finished-at="2014-07-01T17:03:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="editSomeAddress()[pri:0, instance:com.example.tests.EditAddressTests@76724357]" name="editSomeAddress" duration-ms="2331" started-at="2014-06-19T09:42:38Z" finished-at="2014-06-19T09:42:40Z">
+        <test-method status="PASS" signature="deleteSomeAddress()[pri:0, instance:com.example.tests.RemoveAddressTests@3abdf256]" name="deleteSomeAddress" duration-ms="1005" started-at="2014-07-01T17:03:46Z" finished-at="2014-07-01T17:03:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editSomeAddress -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.EditAddressTests@76724357]" name="tearDown" is-config="true" duration-ms="418" started-at="2014-06-19T09:42:40Z" finished-at="2014-06-19T09:42:41Z">
+        </test-method> <!-- deleteSomeAddress -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.RemoveAddressTests@3abdf256]" name="tearDown" is-config="true" duration-ms="507" started-at="2014-07-01T17:03:47Z" finished-at="2014-07-01T17:03:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.example.tests.EditAddressTests -->
+      </class> <!-- com.example.tests.RemoveAddressTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
