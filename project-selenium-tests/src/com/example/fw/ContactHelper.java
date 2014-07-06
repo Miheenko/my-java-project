@@ -3,12 +3,12 @@ package com.example.fw;
 import static com.example.fw.ContactHelper.CREATION;
 
 import org.openqa.selenium.By;
-import java.util.ArrayList;
+
 import java.util.List;
 import org.openqa.selenium.WebElement;
 
 import com.example.tests.AddressData;
-import com.example.tests.GroupData;
+
 import com.example.utils.SortedListOf;
 
 public class ContactHelper extends HelperBase {
@@ -35,7 +35,6 @@ private SortedListOf<AddressData> cachedContacts;
 		List<WebElement> checkboxes = driver
 				.findElements(By.name("selected[]"));
 		for (WebElement checkbox : checkboxes) {
-			// AddressData contact = new AddressData();
 			String title = checkbox.getAttribute("title");
 			int len = "Select (".length();
 			String firstName = title.substring(len, title.indexOf(" ", len));
@@ -50,7 +49,7 @@ private SortedListOf<AddressData> cachedContacts;
 		fillAddressForm(address, CREATION);
 		submitAddressCreation();
 		returnToHomePage();
-		 rebuildCache();
+		rebuildCache();
 		return this;
 
 	}
@@ -58,11 +57,10 @@ private SortedListOf<AddressData> cachedContacts;
 	public ContactHelper modifyContact(int index, AddressData address) {
 		manager.navigateTo().mainPage();
 		initRemoveEditContact(index);
-		//String firstName = "777777";
 		fillAddressForm(address, MODIFICATION);
 		submitAddressModification();
 		returnToHomePage();
-		 rebuildCache();
+		rebuildCache();
 		return this;
 
 	}
@@ -72,7 +70,7 @@ private SortedListOf<AddressData> cachedContacts;
 		initRemoveEditContact(i);
 	    removeContact();
 		returnToHomePage(); 
-		 rebuildCache();
+		rebuildCache();
 		return this;
 	}
 	
