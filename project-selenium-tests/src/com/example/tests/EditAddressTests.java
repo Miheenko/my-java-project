@@ -1,38 +1,37 @@
 package com.example.tests;
 
-import static org.testng.Assert.assertEquals;
 
-import java.util.Collections;
-import java.util.List;
+import static org.junit.Assert.assertThat;
+import static org.hamcrest.Matchers.*;
+
+import java.util.Random;
 
 import org.testng.annotations.Test;
 
+import com.example.utils.SortedListOf;
+
+
+import static com.example.fw.ContactHelper.MODIFICATION;
+
 public class EditAddressTests extends TestBase {
 	
-	@Test
-	public void editSomeAddress(){
-		app.getNavigationHelper().openMainPage();
-		
+	@Test(dataProvider = "randomAddressGenerator")
+	public void editSomeAddress(AddressData address){
+				
 		//save old state
-		List<AddressData> oldList = app.getContactHelper().getContacts();
+		SortedListOf<AddressData> oldList = app.getContactHelper().getContacts();
+		
+		 Random rnd = new Random();
+		    int index = rnd.nextInt(oldList.size()-1);
 		
 		//actions
-		app.getContactHelper().initRemoveEditContact(1);
-		AddressData address = new AddressData();
-		address.firstName = "777777";
-		app.getContactHelper().fillAddressForm(address);
-		app.getContactHelper().submitAddressModification();
-		app.getContactHelper().returnToHomePage();
+		    app.getContactHelper().modifyContact(index, address);
 		
 		//save new state
-		  List<AddressData> newList = app.getContactHelper().getContacts();
-
-		  
-		  oldList.remove(0);
-		  oldList.add(address);
-		  Collections.sort(oldList);
-		  Collections.sort(newList);
-		  assertEquals(newList, oldList);
+		    SortedListOf<AddressData> newList = app.getContactHelper().getContacts();
+		    
+		//compare states
+		    assertThat(newList, equalTo(oldList.without(index).withAdded(address)));  
 	  
 	}
 

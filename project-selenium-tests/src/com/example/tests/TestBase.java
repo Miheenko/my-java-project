@@ -32,11 +32,11 @@ public class TestBase {
 		List<Object[]> list = new ArrayList<Object[]>();
 		
 		for (int i = 0; i < 2; i++){
-			GroupData group = new GroupData();
+			GroupData group = new GroupData()
+			.withGroupname(generateRandomString())
+			.withHeader(generateRandomString())
+			.withFooter(generateRandomString());
 			
-			group.groupname = generateRandomString();
-			group.header = generateRandomString();
-			group.footer = generateRandomString();
 			list.add(new Object[]{group});
 		}
 			return list.iterator();
@@ -47,22 +47,22 @@ public class TestBase {
 		List<Object[]> list = new ArrayList<Object[]>();
 		
 		for (int i = 0; i < 2; i++){
-			AddressData address = new AddressData();
-			
-			address.firstName = generateRandomString();
-			address.lastName = generateRandomString();
-			address.addressFirst = generateRandomString();
-			address.phoneHome = generateRandomString();
-			address.phoneMobile = generateRandomString();
-			address.phoneWork = generateRandomString();
-			address.email = generateRandomString();
-			address.birthDay = Integer.toString(generateRandomString(15, 7));
-			address.birthMonth = month[generateRandomString(12,1)];
-			address.birthYear = Integer.toString(generateRandomString(100,80) + 1900);
-			address.newGroup = "";
-			address.addressSecond = generateRandomString();
-			address.phoneHomeSecond = generateRandomString();
+			AddressData address = new AddressData()
+			.withFirstName(generateRandomString())
+			.withLastName(generateRandomString())
+			.withAddressFirst(generateRandomString())
+			.withPhoneHome(generateRandomString())
+			.withPhoneMobile(generateRandomString())
+			.withPhoneWork(generateRandomString())
+			.withEmail(generateRandomString())
+			.withBirthDay(Integer.toString(generateRandomString(15, 7)))
+			.withBirthMonth(month[generateRandomString(12,1)])
+			.withBirthYear(Integer.toString(generateRandomString(100,80) + 1900))
+			.withNewGroup("")
+			.withAddressSecond(generateRandomString())
+			.withPhoneHomeSecond(generateRandomString());
 			System.out.println(address);
+			
 			list.add(new Object[]{address});
 		}
 			return list.iterator();
@@ -85,7 +85,6 @@ public class TestBase {
 		if (res == 0){
 			res = delta;
 		}
-		System.out.println("res: " + res);
 		return res;
 	}
 }
