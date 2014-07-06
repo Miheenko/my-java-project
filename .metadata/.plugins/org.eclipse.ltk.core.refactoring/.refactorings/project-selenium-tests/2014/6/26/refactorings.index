@@ -1,0 +1,6 @@
+1403775268207	Inline local variable 'group'
+1403779850429	Rename method 'getNavigationHelper'
+1403779887089	Rename method 'openMainPage'
+1403779901892	Rename method 'gotoGroupsPage'
+1403781363474	Extract method 'submitGroupRDeletion'
+1403781417603	Rename method 'submitGroupRDeletion'

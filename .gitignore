@@ -12,6 +12,6 @@
 hs_err_pid*
 
 # folders
-.settings
-.metadata
-test-output
+.settings\*
+.metadata\*
+test-output\*

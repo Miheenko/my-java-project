@@ -1,0 +1,83 @@
+package com.example.fw;
+
+import org.openqa.selenium.By;
+import java.util.ArrayList;
+import java.util.List;
+import org.openqa.selenium.WebElement;
+
+import com.example.tests.AddressData;
+
+public class ContactHelper extends HelperBase {
+	
+	public static boolean CREATION =true;
+	public static boolean MODIFICATION =false;
+
+	public ContactHelper(ApplicationManager manager) {
+		super(manager);
+	}
+
+	public void initNewAddressCreation() {
+		click(By.linkText("add new"));
+	}
+
+	public ContactHelper fillAddressForm(AddressData address, boolean formType) {
+	    type(By.name("firstname"),address.getFirstName);
+	    type(By.name("lastname"), address.getLastName);
+	    type(By.name("address"), address.getAddressFirst);
+	    type(By.name("home"), address.getPhoneHome);
+	    type(By.name("mobile"), address.getPhoneMobile);
+	    type(By.name("work"), address.getPhoneWork);
+	    type(By.name("email"), address.getEmail);
+	    selectByText(By.name("bday"), address.getBirthDay);
+	    selectByText(By.name("bmonth"), address.getBirthMonth);
+	    type(By.name("byear"), address.getBirthYear);
+	    //selectByText(By.name("new_group"), address.getNewGroup);
+	    if (formType == CREATION) {
+	    	
+	    }else {
+	   if (driver.findElements(By.name("new_group")).size() !=0){
+		   throw new Error ("Group selector exists in contact modification form");
+	      } 	
+	    }
+	    type(By.name("address2"), address.getAddressSecond);
+	    type(By.name("phone2"), address.getPhoneHomeSecond);
+	}
+
+	public void submitAddressCreation() {
+		click(By.name("submit"));
+	}
+
+	public void returnToHomePage() {
+		click(By.linkText("home page"));
+	}
+
+	private void selectContactByIndex(int index) {
+		click(By.xpath("(//input[@name='selected[]'])[" + index +"]"));
+	}
+
+	public void initRemoveEditContact(int index) {
+		selectContactByIndex(index);
+		click(By.xpath("(//a[contains(@href,'edit.php?id=')])[" + index + "]"));
+	}
+
+	public void removeContact() {
+		click(By.xpath("//input[@name='update' and @value='Delete']"));	
+	}
+
+	public void submitAddressModification() {
+		click(By.xpath("//input[@name='update' and @value='Update']"));
+	}
+	
+	public List<AddressData> getContacts() {
+		List<AddressData> contacts = new ArrayList<AddressData>();
+		List<WebElement> checkboxes = driver.findElements(By.name("selected[]"));
+		for ( WebElement checkbox : checkboxes) {
+		AddressData contact = new AddressData();
+		String title = checkbox.getAttribute("title");
+		int len = "Select (".length();
+		contact.firstName = title.substring(len, title.indexOf(" ", len));
+		contacts.add(contact);
+		}
+		return contacts;
+	}
+}
