@@ -32,13 +32,14 @@ private SortedListOf<AddressData> cachedContacts;
 	private void rebuildCache() {
 		cachedContacts = new SortedListOf<AddressData>();
 		manager.navigateTo().mainPage();
-		List<WebElement> checkboxes = driver
-				.findElements(By.name("selected[]"));
-		for (WebElement checkbox : checkboxes) {
-			String title = checkbox.getAttribute("title");
-			int len = "Select (".length();
-			String firstName = title.substring(len, title.indexOf(" ", len));
-			cachedContacts.add(new AddressData().withFirstName(firstName));
+		List<WebElement> rows = driver
+				.findElements(By.xpath(".//tr[@name='entry']"));
+
+		for (WebElement row : rows) {
+			AddressData address = new AddressData()
+			 .withFirstName(row.findElement(By.xpath(".//td[2]")).getText())
+		     .withLastName(row.findElement(By.xpath(".//td[3]")).getText());
+			cachedContacts.add(address);
 		}
 		
 	}

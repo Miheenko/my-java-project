@@ -205,5 +205,5 @@ public class AddressData implements Comparable<AddressData> {
 	public String getPhoneHomeSecond() {
 		return phoneHomeSecond;
 	}
-	
+
 }
