@@ -1,43 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="75193" started-at="2014-07-04T12:06:41Z" finished-at="2014-07-04T12:07:56Z">
+  <suite name="Default suite" duration-ms="9684" started-at="2014-07-10T18:59:40Z" finished-at="2014-07-10T18:59:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="75193" started-at="2014-07-04T12:06:41Z" finished-at="2014-07-04T12:07:56Z">
-      <class name="com.example.tests.EditAddressTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.EditAddressTests@76a5994]" name="setUp" is-config="true" duration-ms="10514" started-at="2014-07-04T16:06:41Z" finished-at="2014-07-04T16:06:51Z">
+    <test name="Default test" duration-ms="9684" started-at="2014-07-10T18:59:40Z" finished-at="2014-07-10T18:59:49Z">
+      <class name="com.example.tests.RemoveAddressTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.RemoveAddressTests@45586edb]" name="setUp" is-config="true" duration-ms="7536" started-at="2014-07-10T22:59:40Z" finished-at="2014-07-10T22:59:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="editSomeAddress(com.example.tests.AddressData)[pri:0, instance:com.example.tests.EditAddressTests@76a5994]" name="editSomeAddress" duration-ms="32216" started-at="2014-07-04T16:06:51Z" data-provider="randomAddressGenerator" finished-at="2014-07-04T16:07:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AddressData [firstName=test348311482, lastName=test1445771981, addressFirst=, phoneHome=test-408052006, phoneMobile=test1022648670, phoneWork=test-1113274722, email=, birthDay=6, birthMonth=March, birthYear=1914, newGroup=, addressSecond=, phoneHomeSecond=test-2092249401]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="deleteSomeAddress()[pri:0, instance:com.example.tests.RemoveAddressTests@45586edb]" name="deleteSomeAddress" duration-ms="1579" started-at="2014-07-10T22:59:47Z" finished-at="2014-07-10T22:59:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editSomeAddress -->
-        <test-method status="PASS" signature="editSomeAddress(com.example.tests.AddressData)[pri:0, instance:com.example.tests.EditAddressTests@76a5994]" name="editSomeAddress" duration-ms="31667" started-at="2014-07-04T16:07:23Z" data-provider="randomAddressGenerator" finished-at="2014-07-04T16:07:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AddressData [firstName=, lastName=test1043475462, addressFirst=, phoneHome=test-1830244752, phoneMobile=test-729550462, phoneWork=test-1041777498, email=, birthDay=12, birthMonth=December, birthYear=1973, newGroup=, addressSecond=test-2120195244, phoneHomeSecond=]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editSomeAddress -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.EditAddressTests@76a5994]" name="tearDown" is-config="true" duration-ms="774" started-at="2014-07-04T16:07:55Z" finished-at="2014-07-04T16:07:56Z">
+        </test-method> <!-- deleteSomeAddress -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.RemoveAddressTests@45586edb]" name="tearDown" is-config="true" duration-ms="554" started-at="2014-07-10T22:59:49Z" finished-at="2014-07-10T22:59:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.example.tests.EditAddressTests -->
+      </class> <!-- com.example.tests.RemoveAddressTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

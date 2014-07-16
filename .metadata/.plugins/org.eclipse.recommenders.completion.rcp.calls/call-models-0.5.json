@@ -13,5 +13,10 @@
     "coordinate": "jre:jre:zip:call:1.0.0",
     "location": "C:\\Program Files\\Java\\jre7\\lib\\rt.jar",
     "status": "RESOLVED"
+  },
+  "C:\\projects\\java  lib\\xstream-distribution-1.4.7-bin\\xstream-1.4.7\\lib\\xstream-1.4.7.jar": {
+    "location": "C:\\projects\\java  lib\\xstream-distribution-1.4.7-bin\\xstream-1.4.7\\lib\\xstream-1.4.7.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027C:\\projects\\java  lib\\xstream-distribution-1.4.7-bin\\xstream-1.4.7\\lib\\xstream-1.4.7.jar\u0027. Neither fingerprint \u0027bce3282142b63068260f021fcbe48b72e8d71a1a\u0027 nor symbolic name \u0027xstream\u0027 are known."
   }
 }

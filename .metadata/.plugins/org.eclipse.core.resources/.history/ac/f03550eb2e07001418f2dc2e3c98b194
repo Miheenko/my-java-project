@@ -1,0 +1,87 @@
+package com.example.tests;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class ContactDataGenerator {
+
+	private String month[] = {"January","February","March","April","May","June","July","August","September","October","November","December"};
+	
+	public static void main(String[] args) {
+		if (args.length < 3){
+			System.out.println("Please specify parameters: <amount of test data> <file> <format>");
+			return;
+		}
+		int amount = Integer.parseInt(args[0]);
+		File file = new File(args[1]);
+		String format = args[2];
+		List<AddressData> contacts = generateRandomContacts(amount);
+        if ("csv".equals(format)) {
+	     saveContactsToCsvFile(contacts, file);
+        } else if ("xml".equals(format)){
+         saveContactsToXmlFile(contacts, file);	
+        } else {
+        	System.out.println("Unknown format" + format);
+        	return;
+        }
+	}
+
+	private static void saveContactsToXmlFile(List<AddressData> contacts,
+			File file) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void saveContactsToCsvFile(List<AddressData> contacts,
+			File file) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static List<AddressData> generateRandomContacts(int amount) {
+List<AddressData> list = new ArrayList<AddressData>();
+		
+		for (int i = 0; i < amount; i++){
+			AddressData address = new AddressData()
+			.withFirstName(generateRandomString())
+			.withLastName(generateRandomString())
+			.withAddressFirst(generateRandomString())
+			.withPhoneHome(generateRandomString())
+			.withPhoneMobile(generateRandomString())
+			.withPhoneWork(generateRandomString())
+			.withEmail(generateRandomString())
+			.withBirthDay(Integer.toString(generateRandomString(15, 7)))
+			.withBirthMonth(month[generateRandomString(12,1)])
+			.withBirthYear(Integer.toString(generateRandomString(100,80) + 1900))
+			.withNewGroup("")
+			.withAddressSecond(generateRandomString())
+			.withPhoneHomeSecond(generateRandomString());
+			System.out.println(address);
+			
+			list.add(address);
+		}
+			return list;
+	}
+	
+	public String generateRandomString(){
+		Random rnd = new Random();
+		if (rnd.nextInt(3) == 0) {
+			return "";
+		} else {
+			return "test" + rnd.nextInt();
+		}
+	}
+	
+	
+	public int generateRandomString(int limit, int delta){
+		Random rnd = new Random();
+		int res = rnd.nextInt(limit);
+		if (res == 0){
+			res = delta;
+		}
+		return res;
+	}
+
+}
