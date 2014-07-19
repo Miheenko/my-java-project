@@ -1,6 +1,8 @@
 package com.example.tests;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -49,6 +51,13 @@ public class ContactDataGenerator {
 		
 		
 	}
+	
+	public static List<AddressData> loadContactsFromXmlFile(File file)  {
+		XStream xstream = new XStream();
+		xstream.alias("contacts", AddressData.class);
+		return (List<AddressData>) xstream.fromXML(file);
+		
+	}
 
 	private static void saveContactsToCsvFile(List<AddressData> contacts,
 			File file) throws IOException {
@@ -57,11 +66,39 @@ public class ContactDataGenerator {
 			writer.write(address.getAddressFirst() + "," + address.getAddressSecond() + "," + address.getBirthDay() + 
 					"," +address.getBirthMonth() + "," + address.getBirthYear() + "," + address.getEmail() + "," + address.getFirstName() + ","
 		+ address.getLastName() + "," + address.getNewGroup() + "," + address.getPhoneHome() + "," + address.getPhoneHomeSecond() + ","
-					+ address.getPhoneMobile() + "," + address.getPhoneWork() + "\n");
+					+ address.getPhoneMobile() + "," + address.getPhoneWork() + ",!" + "\n");
 		}
 		writer.close();
 		
 	}
+	
+	  public static List<AddressData> loadContactsFromCsvFile(File file) throws IOException {
+		  List<AddressData> list = new ArrayList<AddressData>();
+		  FileReader reader = new FileReader(file);
+		  BufferedReader bufferedReader = new BufferedReader(reader);
+		  String line = bufferedReader.readLine();
+		  while (line != null){
+			  String[] part = line.split(",");
+			  AddressData address = new AddressData()
+			  .withAddressFirst(part[0])
+			  .withAddressSecond(part[1])
+			  .withBirthDay(part[2])
+			  .withBirthMonth(part[3])
+			  .withBirthYear(part[4])
+			  .withEmail(part[5])
+			  .withAddressFirst(part[6])
+			  .withLastName(part[7])
+			  .withNewGroup(part[8])
+			  .withPhoneHome(part[9])
+			  .withPhoneHomeSecond(part[10])
+			  .withPhoneMobile(part[11])
+			  .withPhoneWork(part[12]);
+			  list.add(address);
+			  line = bufferedReader.readLine();
+		  }
+		  bufferedReader.close();
+		  return list;
+		}
 
 	public static List<AddressData> generateRandomContacts(int amount) {
 List<AddressData> list = new ArrayList<AddressData>();
