@@ -6,7 +6,7 @@
       <class name="com.example.tests.MyAddAddressTests">
         <methods>
           <include name="tearDown"/>
-          <include name="testAddressCreation" invocation-numbers="0"/>
+          <include name="testAddressCreation" invocation-numbers="0 1"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.example.tests.MyAddAddressTests -->
