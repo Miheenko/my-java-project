@@ -1,125 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="2" passed="0">
+<testng-results skipped="0" failed="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14997" started-at="2014-07-19T13:03:45Z" finished-at="2014-07-19T13:04:00Z">
+  <suite name="Default suite" duration-ms="43913" started-at="2014-07-21T08:37:18Z" finished-at="2014-07-21T08:38:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14997" started-at="2014-07-19T13:03:45Z" finished-at="2014-07-19T13:04:00Z">
-      <class name="com.example.tests.MyAddAddressTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.MyAddAddressTests@571f0759]" name="setUp" is-config="true" duration-ms="9063" started-at="2014-07-19T17:03:45Z" finished-at="2014-07-19T17:03:54Z">
+    <test name="Default test" duration-ms="43913" started-at="2014-07-21T08:37:18Z" finished-at="2014-07-21T08:38:02Z">
+      <class name="com.example.tests.MyCreateGroupTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.MyCreateGroupTests@2280cdac]" name="setUp" is-config="true" duration-ms="18062" started-at="2014-07-21T12:37:18Z" finished-at="2014-07-21T12:37:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testAddressCreation(com.example.tests.AddressData)[pri:0, instance:com.example.tests.MyAddAddressTests@571f0759]" name="testAddressCreation" duration-ms="3433" started-at="2014-07-19T17:03:54Z" data-provider="contactsFromFile" finished-at="2014-07-19T17:03:57Z">
+        <test-method status="PASS" signature="testGroupCreationWithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.MyCreateGroupTests@2280cdac]" name="testGroupCreationWithValidData" duration-ms="4162" started-at="2014-07-21T12:37:36Z" data-provider="groupsFromFile" finished-at="2014-07-21T12:37:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[AddressData [firstName=test1211582735, lastName=test-1455453518, addressFirst=test1913413522, phoneHome=, phoneMobile=test-324253313, phoneWork=test-589695766, email=test1039613123, birthDay=5, birthMonth=April, birthYear=1907, newGroup=, addressSecond=test-829313057, phoneHomeSecond=test1727294088]]]>
+                <![CDATA[GroupData [groupname=, header=, footer=test1574695056]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[
-Expected: <[AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=bbbbb, lastName=aaaa, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1583331366, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-160496698, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-261271793, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1211582735, lastName=test-1455453518, addressFirst=test1913413522, phoneHome=, phoneMobile=test-324253313, phoneWork=test-589695766, email=test1039613123, birthDay=5, birthMonth=April, birthYear=1907, newGroup=, addressSecond=test-829313057, phoneHomeSecond=test1727294088], AddressData [firstName=test1493253648, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test157676345, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null]]]]><![CDATA[>
-     but: was <[AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=bbbbb, lastName=aaaa, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1455453518, lastName=test1211582735, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1583331366, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-160496698, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-261271793, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1493253648, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test157676345, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null]]><![CDATA[]]]]><![CDATA[>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 
-Expected: <[AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=bbbbb, lastName=aaaa, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1583331366, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-160496698, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-261271793, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1211582735, lastName=test-1455453518, addressFirst=test1913413522, phoneHome=, phoneMobile=test-324253313, phoneWork=test-589695766, email=test1039613123, birthDay=5, birthMonth=April, birthYear=1907, newGroup=, addressSecond=test-829313057, phoneHomeSecond=test1727294088], AddressData [firstName=test1493253648, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test157676345, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null]]]]><![CDATA[>
-     but: was <[AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=bbbbb, lastName=aaaa, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1455453518, lastName=test1211582735, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1583331366, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-160496698, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-261271793, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1493253648, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test157676345, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null]]]]><![CDATA[>
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.junit.Assert.assertThat(Assert.java:865)
-	at org.junit.Assert.assertThat(Assert.java:832)
-	at com.example.tests.MyAddAddressTests.testAddressCreation(MyAddAddressTests.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddressCreation -->
-        <test-method status="FAIL" signature="testAddressCreation(com.example.tests.AddressData)[pri:0, instance:com.example.tests.MyAddAddressTests@571f0759]" name="testAddressCreation" duration-ms="1887" started-at="2014-07-19T17:03:57Z" data-provider="contactsFromFile" finished-at="2014-07-19T17:03:59Z">
+        </test-method> <!-- testGroupCreationWithValidData -->
+        <test-method status="PASS" signature="testGroupCreationWithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.MyCreateGroupTests@2280cdac]" name="testGroupCreationWithValidData" duration-ms="6190" started-at="2014-07-21T12:37:40Z" data-provider="groupsFromFile" finished-at="2014-07-21T12:37:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[AddressData [firstName=test1325238582, lastName=test-875511655, addressFirst=test1839769750, phoneHome=test-1732320529, phoneMobile=, phoneWork=test-206818467, email=, birthDay=11, birthMonth=November, birthYear=1996, newGroup=, addressSecond=test-483401495, phoneHomeSecond=]]]>
+                <![CDATA[GroupData [groupname=test-70357335, header=, footer=test-547043550]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[
-Expected: <[AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=bbbbb, lastName=aaaa, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1455453518, lastName=test1211582735, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1583331366, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-160496698, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-261271793, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1325238582, lastName=test-875511655, addressFirst=test1839769750, phoneHome=test-1732320529, phoneMobile=, phoneWork=test-206818467, email=, birthDay=11, birthMonth=November, birthYear=1996, newGroup=, addressSecond=test-483401495, phoneHomeSecond=], AddressData [firstName=test1493253648, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test157676345, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null]]]]><![CDATA[>
-     but: was <[AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=bbbbb, lastName=aaaa, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1455453518, lastName=test1211582735, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1583331366, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-160496698, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-261271793, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-875511655, lastName=test1325238582, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1493253648, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test157676345, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null]]><![CDATA[]]]]><![CDATA[>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 
-Expected: <[AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=bbbbb, lastName=aaaa, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1455453518, lastName=test1211582735, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1583331366, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-160496698, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-261271793, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1325238582, lastName=test-875511655, addressFirst=test1839769750, phoneHome=test-1732320529, phoneMobile=, phoneWork=test-206818467, email=, birthDay=11, birthMonth=November, birthYear=1996, newGroup=, addressSecond=test-483401495, phoneHomeSecond=], AddressData [firstName=test1493253648, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test157676345, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null]]]]><![CDATA[>
-     but: was <[AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=bbbbb, lastName=aaaa, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1455453518, lastName=test1211582735, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1583331366, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-1603649799, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-160496698, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-261271793, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test-875511655, lastName=test1325238582, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1189417010, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test1493253648, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null], AddressData [firstName=test157676345, lastName=, addressFirst=null, phoneHome=null, phoneMobile=null, phoneWork=null, email=null, birthDay=null, birthMonth=null, birthYear=null, newGroup=null, addressSecond=null, phoneHomeSecond=null]]]]><![CDATA[>
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.junit.Assert.assertThat(Assert.java:865)
-	at org.junit.Assert.assertThat(Assert.java:832)
-	at com.example.tests.MyAddAddressTests.testAddressCreation(MyAddAddressTests.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddressCreation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.MyAddAddressTests@571f0759]" name="tearDown" is-config="true" duration-ms="414" started-at="2014-07-19T17:03:59Z" finished-at="2014-07-19T17:04:00Z">
+        </test-method> <!-- testGroupCreationWithValidData -->
+        <test-method status="PASS" signature="testGroupCreationWithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.MyCreateGroupTests@2280cdac]" name="testGroupCreationWithValidData" duration-ms="1844" started-at="2014-07-21T12:37:47Z" data-provider="groupsFromFile" finished-at="2014-07-21T12:37:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [groupname=, header=test838138417, footer=]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupCreationWithValidData -->
+        <test-method status="PASS" signature="testGroupCreationWithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.MyCreateGroupTests@2280cdac]" name="testGroupCreationWithValidData" duration-ms="1940" started-at="2014-07-21T12:37:48Z" data-provider="groupsFromFile" finished-at="2014-07-21T12:37:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [groupname=, header=, footer=test587442341]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupCreationWithValidData -->
+        <test-method status="PASS" signature="testGroupCreationWithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.MyCreateGroupTests@2280cdac]" name="testGroupCreationWithValidData" duration-ms="1659" started-at="2014-07-21T12:37:50Z" data-provider="groupsFromFile" finished-at="2014-07-21T12:37:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [groupname=test437488977, header=test1458455957, footer=test359137116]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupCreationWithValidData -->
+        <test-method status="PASS" signature="testGroupCreationWithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.MyCreateGroupTests@2280cdac]" name="testGroupCreationWithValidData" duration-ms="1496" started-at="2014-07-21T12:37:52Z" data-provider="groupsFromFile" finished-at="2014-07-21T12:37:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [groupname=, header=test1366272392, footer=]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupCreationWithValidData -->
+        <test-method status="PASS" signature="testGroupCreationWithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.MyCreateGroupTests@2280cdac]" name="testGroupCreationWithValidData" duration-ms="1519" started-at="2014-07-21T12:37:54Z" data-provider="groupsFromFile" finished-at="2014-07-21T12:37:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [groupname=test-1222914095, header=, footer=test-1162540625]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupCreationWithValidData -->
+        <test-method status="PASS" signature="testGroupCreationWithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.MyCreateGroupTests@2280cdac]" name="testGroupCreationWithValidData" duration-ms="1267" started-at="2014-07-21T12:37:55Z" data-provider="groupsFromFile" finished-at="2014-07-21T12:37:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [groupname=, header=test29231322, footer=test-1215780001]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupCreationWithValidData -->
+        <test-method status="PASS" signature="testGroupCreationWithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.MyCreateGroupTests@2280cdac]" name="testGroupCreationWithValidData" duration-ms="1472" started-at="2014-07-21T12:37:56Z" data-provider="groupsFromFile" finished-at="2014-07-21T12:37:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [groupname=test-2069463110, header=test-2083448875, footer=]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupCreationWithValidData -->
+        <test-method status="PASS" signature="testGroupCreationWithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.MyCreateGroupTests@2280cdac]" name="testGroupCreationWithValidData" duration-ms="1713" started-at="2014-07-21T12:37:58Z" data-provider="groupsFromFile" finished-at="2014-07-21T12:38:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [groupname=, header=test-1513428858, footer=test-2063155011]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupCreationWithValidData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.MyCreateGroupTests@2280cdac]" name="tearDown" is-config="true" duration-ms="2365" started-at="2014-07-21T12:38:00Z" finished-at="2014-07-21T12:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.example.tests.MyAddAddressTests -->
+      </class> <!-- com.example.tests.MyCreateGroupTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
