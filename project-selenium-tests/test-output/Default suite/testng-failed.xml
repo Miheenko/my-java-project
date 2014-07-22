@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+  <test name="Create_EditGroupTests(failed)">
     <classes>
-      <class name="com.example.tests.MyAddAddressTests">
+      <class name="com.example.tests.MyCreateGroupTests">
         <methods>
-          <include name="testAddressCreation" invocation-numbers="0 1"/>
+          <include name="testGroupCreationWithValidData"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.example.tests.MyAddAddressTests -->
+      </class> <!-- com.example.tests.MyCreateGroupTests -->
       <class name="com.example.tests.EditGroupTests">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="editSomeGroup" invocation-numbers="0 1"/>
+          <include name="editSomeGroup"/>
         </methods>
       </class> <!-- com.example.tests.EditGroupTests -->
-      <class name="com.example.tests.EditAddressTests">
-        <methods>
-          <include name="editSomeAddress" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.example.tests.EditAddressTests -->
     </classes>
-  </test> <!-- Default test(failed) -->
+  </test> <!-- Create_EditGroupTests(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
