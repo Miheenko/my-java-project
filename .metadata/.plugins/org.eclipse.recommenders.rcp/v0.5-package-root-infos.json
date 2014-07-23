@@ -1,18 +1,5 @@
 [
   {
-    "symbolicName": "xmlpull-1.1.3.1",
-    "version": {
-      "major": -1,
-      "minor": -1,
-      "micro": -1,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "2b8e230d2ab644e4ecaa94db7cdedbc40c805dfa",
-    "jarFileModificationDate": "2014-02-08T11:50:46+04:00",
-    "location": "C:\\projects\\java  lib\\xstream-distribution-1.4.7-bin\\xstream-1.4.7\\lib\\xstream\\xmlpull-1.1.3.1.jar",
-    "javaRuntime": false
-  },
-  {
     "symbolicName": "jre",
     "version": {
       "major": 1,
@@ -52,6 +39,19 @@
     "javaRuntime": true
   },
   {
+    "symbolicName": "xstream",
+    "version": {
+      "major": 1,
+      "minor": 4,
+      "micro": 7,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bce3282142b63068260f021fcbe48b72e8d71a1a",
+    "jarFileModificationDate": "2014-02-08T11:53:42+04:00",
+    "location": "C:\\projects\\java_lib\\xstream-distribution-1.4.7-bin\\xstream-1.4.7\\lib\\xstream-1.4.7.jar",
+    "javaRuntime": false
+  },
+  {
     "symbolicName": "jre",
     "version": {
       "major": 1,
@@ -76,6 +76,19 @@
     "jarFileModificationDate": "2014-05-20T16:29:27.738+04:00",
     "location": "C:\\Program Files\\Java\\jre7\\lib\\jfr.jar",
     "javaRuntime": true
+  },
+  {
+    "symbolicName": "xpp3_min-1.1.4c",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "19d4e90b43059058f6e056f794f0ea4030d60b86",
+    "jarFileModificationDate": "2014-02-08T11:50:46+04:00",
+    "location": "C:\\projects\\java_lib\\xstream-distribution-1.4.7-bin\\xstream-1.4.7\\lib\\xstream\\xpp3_min-1.1.4c.jar",
+    "javaRuntime": false
   },
   {
     "symbolicName": "jre",
@@ -117,19 +130,6 @@
     "javaRuntime": true
   },
   {
-    "symbolicName": "xstream",
-    "version": {
-      "major": 1,
-      "minor": 4,
-      "micro": 7,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "bce3282142b63068260f021fcbe48b72e8d71a1a",
-    "jarFileModificationDate": "2014-02-08T11:53:42+04:00",
-    "location": "C:\\projects\\java  lib\\xstream-distribution-1.4.7-bin\\xstream-1.4.7\\lib\\xstream-1.4.7.jar",
-    "javaRuntime": false
-  },
-  {
     "symbolicName": "jre",
     "version": {
       "major": 1,
@@ -169,19 +169,6 @@
     "javaRuntime": true
   },
   {
-    "symbolicName": "xpp3_min-1.1.4c",
-    "version": {
-      "major": -1,
-      "minor": -1,
-      "micro": -1,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "19d4e90b43059058f6e056f794f0ea4030d60b86",
-    "jarFileModificationDate": "2014-02-08T11:50:46+04:00",
-    "location": "C:\\projects\\java  lib\\xstream-distribution-1.4.7-bin\\xstream-1.4.7\\lib\\xstream\\xpp3_min-1.1.4c.jar",
-    "javaRuntime": false
-  },
-  {
     "symbolicName": "jre",
     "version": {
       "major": 1,
@@ -219,6 +206,19 @@
     "jarFileModificationDate": "2014-05-20T16:29:27.716+04:00",
     "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\sunjce_provider.jar",
     "javaRuntime": true
+  },
+  {
+    "symbolicName": "xmlpull-1.1.3.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2b8e230d2ab644e4ecaa94db7cdedbc40c805dfa",
+    "jarFileModificationDate": "2014-02-08T11:50:46+04:00",
+    "location": "C:\\projects\\java_lib\\xstream-distribution-1.4.7-bin\\xstream-1.4.7\\lib\\xstream\\xmlpull-1.1.3.1.jar",
+    "javaRuntime": false
   },
   {
     "symbolicName": "jre",
